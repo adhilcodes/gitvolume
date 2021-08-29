@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>gitvolume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <style>
+      .alert {
+        background: #0e0d0d;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+      <center>
+    <div>
+      <h3>Git Volume</h3>
+    </div>
+
+    <!-- Form -->
+    <div>
+      <form action="/result" method="POST">
+        <input
+          type="text"
+          placeholder="Paste the GitHub repo url"
+          class="u-full-width"
+          name="repo_url"
+        />
+
+        <input type="submit" value="submit"/>
+        <br />
+        <div class="alert">
+          {{ size }}
+        </div>
+      </form>
+    </div>
+
+</center>
+  </body>
+</html>

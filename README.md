@@ -14,22 +14,35 @@
 <br>
 
 ## Dependencies
- - < dependency >
- - < dependency >
+
+ - Flask
+ - requests
 
 
-## Running
+## Running on your local machine
 
 
-< directions to install > 
+1. Fork this repository, by clicking the Fork button at the top-right on this page.
+	
+
+2. Clone the forked repository from your GitHub account.
+
 ```bash
-< insert code >
+git clone https://github.com/[replace-with-your-github-username]/gitvolume.git 
 ```
 
-< directions to execute >
-
+3. Go to the cloned directory (e.g. `cd givolume`).
+	
+4. Run the below command to install all the dependencies
+	
 ```bash
-< insert code >
+ pip install r requirements.txt 
+```
+	
+5. Run the application
+	
+```bash
+ python3 app.py 
 ```
 
 ## Contributors

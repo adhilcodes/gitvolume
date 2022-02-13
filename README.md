@@ -2,7 +2,7 @@
 <a href="https://github.com/adhilcodes/gitvolume">
 	<img src="https://github.com/adhilcodes/gitvolume/blob/main/files/home.png" alt="DSC VIT"/>
 </a>
-	<h2 align="center"> GitVolume | Uncovering the GitHup repos </h2>
+	<h2 align="center"> GitVolume | Uncovering the GitHub repos </h2>
 	<h4 align="center"> A webapp to know the size of a Public GitHub Repo<h4>
 </p>
 

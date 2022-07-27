@@ -18,12 +18,35 @@
         color: rgb(201, 16, 16);
         margin: 1rem;
       }
+      body{
+        background-image:url("../static/githubbg.jpg");
+        background-position:center -92px;
+        background-repeat:no-repeat;
+      }
+      h3{
+        color:white;
+      }
+
+      #submit{
+        color:white;
+        background-color:black;
+      }
+
+      .size_disp{
+        position:relative;
+        bottom:22px;
+        color: black;
+        background-color: (0,0,0,0.5);
+        display: inline-block;
+        font-family: sans-serif;
+
+      }
     </style>
   </head>
   <body>
       <center>
     <div>
-      <h3>Git Volume</h3>
+      <h3>GIT VOLUME</h3>
     </div>
 
     <!-- Form -->
@@ -36,18 +59,17 @@
           name="repo_url"
         />
 
-        <input type="submit" value="submit"/>
-        <br />
+        <input id="submit" type="submit" value="submit"/>
+        
         <div class="alert">
           {% if size== None %}            
               {% with message=get_flashed_messages() %}
                   {% for mess in message %}
-                      <p>{{mess}}</p>
+                      <p class="size_disp">{{mess}}</p>
                   {% endfor %}
               {% endwith %}
-          
           {% else %}
-              <p>{{size}}</p>
+              <p class="size_disp">{{size}}</p>
           
           {% endif %}
         </div>

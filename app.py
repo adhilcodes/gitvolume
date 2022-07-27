@@ -26,17 +26,19 @@ def gitrepo_volume():
         result = requests.get(f'{base_api_url}/{github_username}/{repository_name}')
 
         if result.status_code==404:
-            flash("Oh Sorry, that wasn't a valid Github Repository")
+            flash("Oh Sorry, that wasn't a valid Github Repository!")
             return render_template('index.html',size=None)
 
 
         repo_size_kb = result.json().get('size')
         repo_size_mb = repo_size_kb * 0.001
         repo_size_gb = repo_size_mb * 0.001
+        repo_size_gb = f"{repo_size_gb:8f}"
+
 
         size_in_kb = (str(repo_size_kb)+"KB")
         size_in_mb = (str(repo_size_mb)+"MB")
-        size_in_gb = (str(repo_size_gb)+"GB")
+        size_in_gb = (repo_size_gb+"GB")
 
         size = str(size_in_kb) + " | " + str(size_in_mb) + " | " + str(size_in_gb)
 
